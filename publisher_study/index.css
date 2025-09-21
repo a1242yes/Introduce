@@ -109,19 +109,36 @@ body {
 .kategorie_box:hover .kategorie_text {
     color: #000000;   /* 박스 위에 마우스 올리면 글자도 같이 변경 */
 }
-
+.Introduce_group{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;  
+    gap: 100px;
+}
 .Introduce_graph {
-    width: 400px;
-    border-bottom: 2px solid #F041BB;
+    width: 600px;
+    border-bottom: 3px solid #F041BB;
     display: flex;
     align-items: center;  /* 세로 중앙 정렬 */
-    gap: 50px;            /* text1과 text2 사이 간격 조절 */
+    gap: 90px;            /* text1과 text2 사이 간격 조절 */
+}
+.Introduce_graph_group{
+
 }
 
 .Introduce_graph_text1 {  
+    width: 130px;
+    height: 30px;
+    font-size: 25px;
     color: #F041BB;
+    margin-left: 20px;
 }
 
 .Introduce_graph_text2 {
     color: #F041BB;
+    font-size: 25px;
+}
+
+.id_img{
+    width: 290px;
 }
