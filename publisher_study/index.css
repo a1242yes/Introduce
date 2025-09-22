@@ -4,7 +4,7 @@ body {
     /* display: flex;
     justify-content: center; /* 가로 중앙 */
     /* align-items: center;     세로 중앙 */ 
-    background-color: #000000;  /* 배경 확인용 */
+    background-color: #0C0C0C;  /* 배경 확인용 */
 }
 
 .title_box {
@@ -140,5 +140,19 @@ body {
 }
 
 .id_img{
-    width: 290px;
+    width: 350px;
+}
+
+.pro_title{
+    color: #0059FF;
+    font-size: 36px;
+    font-weight: bold;
+}
+.pro_text{
+    color: #ffffff;
+    font-size: 28px;
+    /* display: inline-block; */
+}
+.project_group{
+    text-align: center;
 }
