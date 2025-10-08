@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 태그 속성 비교</title>
+</head>
+<body>
+  <h1>&lt;form&gt; 태그 속성 비교</h1>
+
+  <!-- 1️⃣ 기본 form -->
+  <form action="/submit1" method="get">
+    <h3>기본 form (GET 방식)</h3>
+    <input type="text" name="username" placeholder="이름 입력">
+    <button type="submit">전송</button>
+  </form>
+
+  <hr>
+
+  <!-- 2️⃣ POST + 자동완성 끔 -->
+  <form action="/submit2" method="post" autocomplete="off">
+    <h3>POST 방식 + 자동완성 끔</h3>
+    <input type="text" name="email" placeholder="이메일 입력">
+    <button type="submit">전송</button>
+  </form>
+
+  <hr>
+
+  <!-- 3️⃣ 파일 업로드용 -->
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <h3>파일 업로드용 (multipart/form-data)</h3>
+    <input type="file" name="profile">
+    <button type="submit">업로드</button>
+  </form>
+
+  <hr>
+
+  <!-- 4️⃣ 유효성 검사 끔 -->
+  <form action="/submit4" method="post" novalidate>
+    <h3>novalidate (유효성 검사 생략)</h3>
+    <input type="email" name="useremail" placeholder="이메일 입력 (형식 무시)">
+    <button type="submit">전송</button>
+  </form>
+
+</body>
+</html>
