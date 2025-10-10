@@ -41,10 +41,25 @@
     <fieldset>
         <legend>상품선택</legend>
         <p><b>주문 할 상품을 선택해주세요.</b></p>
-        <label for=""><input type="checkbox" value="s_3">선물용 3kg</label>
-        <label for=""><input type="checkbox" value="s_5">선물용 5kg</label>
-        <label for=""><input type="checkbox" value="f_3">가정용 3kg</label>
-        <label for=""><input type="checkbox" value="f_5">가정용 5kg</label>
+        <ul>
+            <li>
+                <label for=""><input type="checkbox" value="s_3">선물용 3kg</label>
+                <input type="number" min="0" max="5">개 (최대 5개)
+            </li>
+            <li>
+                <label for=""><input type="checkbox" value="s_5">선물용 5kg</label>
+                <input type="number" min="0" max="3">개 (최대 3개)
+            </li>
+            <li>
+                <label for=""><input type="checkbox" value="f_3">가정용 3kg</label>
+                <input type="range" min="0" max="5">개 (최대 5개)
+            </li>
+            <li>
+                <label for=""><input type="checkbox" value="f_5">가정용 5kg</label>
+                 <input type="range" min="0" max="3">개 (최대 3개)
+            </li>
+        </ul>
+    
 
         <p><b>포장 선택</b></p>
         <label for=""><input type="radio" name="gift" value="yes">선물 포장</label>
