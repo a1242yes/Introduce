@@ -65,5 +65,27 @@
         <label for=""><input type="radio" name="gift" value="yes">선물 포장</label>
         <label for=""><input type="radio" name="gift" value="no">선물 포장 안 함</label>
     </fieldset>
+
+    <h1>날짜 지정하기</h1>
+    <input type="date" min="2025-09-30" max="2025-10-30">
+    <input type="month">
+    <input type="week">
+
+    <h1>시간 지정하기</h1>
+    <input type="time" >
+    <input type="datetime-local">
+
+    <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소">
+    </div>
+
+    <form action="">
+        <input type="button" value="공지 창 열기" onclick="window.open('input_example.html')">
+    </form>
+
+    <input type="file">
+    
+    <input type="hidden" name="이름" id="서버로 넘길 값">
 </body>
 </html>
