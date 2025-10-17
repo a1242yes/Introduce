@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/publisher_study/position.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="div_group">
+      <div class="divg">
+        <div class="div2"></div>
+        <div id="div1"></div>
+        <div class="div2"></div>
+      </div>
+    </div>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="position.css" />
+    <title>드롭다운 메뉴 테스트</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <div class="logo">JOBKOREA</div>
+        <nav class="dropdown">
+          <ul class="menu-list">
+            <li class="menu-item"><a href="#">채용정보</a></li>
+            <li class="menu-item"><a href="#">합격축하금</a></li>
+            <li class="menu-item"><a href="#">공채정보</a></li>
+            <li class="menu-item"><a href="#">신입·인턴</a></li>
+            <li class="menu-item"><a href="#">기업·연봉</a></li>
+            <li class="menu-item"><a href="#">취업전략</a></li>
+            <li class="menu-item"><a href="#">취업톡톡</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="dropdown-content" id="dropdownContent">
+        <div class="submenu-wrapper">
+          <div class="submenu-column">
+            <strong>채용탐색</strong>
+            <ul>
+              <li><a href="#">지역별 공고</a></li>
+              <li><a href="#">직무별 공고</a></li>
+              <li><a href="#">산업별 공고</a></li>
+              <li><a href="#">기업별 공고</a></li>
+              <li><a href="#">TOP100 공고</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <strong>추천채용</strong>
+            <ul>
+              <li><a href="#">AI 전문직 공고</a></li>
+              <li><a href="#">반도체·2차전지</a></li>
+              <li><a href="#">급성장 스타트업</a></li>
+            </ul>
+          </div>
+          <div class="submenu-column">
+            <strong>맞춤채용</strong>
+            <ul>
+              <li><a href="#">스크랩 공고</a></li>
+              <li><a href="#">입사지원 현황</a></li>
+              <li><a href="#">관심기업 채용</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const header = document.querySelector(".header");
+      const dropdown = document.querySelector(".dropdown");
+      const dropdownContent = document.getElementById("dropdownContent");
+
+      // 드롭다운 영역에 마우스 진입
+      dropdown.addEventListener("mouseenter", () => {
+        dropdownContent.classList.add("active");
+      });
+
+      // 헤더 전체에서 마우스가 나갈 때만 닫기
+      header.addEventListener("mouseleave", () => {
+        dropdownContent.classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

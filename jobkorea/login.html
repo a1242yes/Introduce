@@ -3,85 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
     <title>로그인 창</title>
   </head>
   <body>
-    <main>
-      <!-- 첫 번째 카테고리: 신입 채용 -->
-      <article class="job_category">
-        <h3 class="category_title">🔥 신입 채용 공고</h3>
-        <p><a href="#">First VVIP 채용관 상품안내 ></a></p>
-
-        <section class="job_list">
-          <!-- 공고 1 -->
-          <div class="job_card">
-            <a href="/jobkorea/job_posting.html">
-              <img src="/jobkorea/img/co.jpg" alt="공고 배경" class="job_bg" />
-              <img
-                src="/jobkorea/img/coupang_logo.png"
-                alt="쿠팡로고"
-                class="job_logo"
-              />
-              <h4>[입사보너스 150] 물류운영지원&사무</h4>
-              <hr />
-              <p>
-                경력, 학력 무관! <br />쿠팡의 물류 전문 자회사 CLS에서 함께할 분
-                모집
-              </p>
-              <button>채용 바로가기 ></button> <br />
-              <span>매출액 5000억 이상</span>
-              <span>D-1 ⭐</span>
-            </a>
+    <div class="category_login_group">
+      <div class="category_group">
+        <nav class="dropdown">
+          <ul id="dropdown_category_gruop">
+            <li>
+              <a href="#" class="category">채용정보</a>
+            </li>
+            <li>
+              <a href="#" class="category">합격축하금</a>
+            </li>
+            <li>
+              <a href="#" class="category">공채정보</a>
+            </li>
+            <li>
+              <a href="#" class="category">신입·인턴</a>
+            </li>
+            <li>
+              <a href="#" class="category">기업·연봉</a>
+            </li>
+            <li>
+              <a href="#" class="category">취업전략</a>
+            </li>
+            <li>
+              <a href="#" class="category">취업톡톡</a>
+            </li>
+          </ul>
+          <div class="dropdown-content">
+            <div class="dropdown-content1">
+              <strong>채용탐색</strong>
+              <ul>
+                <li><a href="#">지역별 공고</a></li>
+                <li><a href="#">직무별 공고</a></li>
+                <li><a href="#">산업별 공고</a></li>
+                <li><a href="#">기업별 공고</a></li>
+                <li><a href="#">TOP100 공고</a></li>
+                <li><a href="#">AI 전문직 공고</a></li>
+                <li><a href="#">반도체·2차전지 공고</a></li>
+              </ul>
+              <strong>채용탐색</strong>
+              <ul>
+                <li><a href="#">지역별 공고</a></li>
+              </ul>
+              <strong>채용탐색</strong>
+              <ul>
+                <li><a href="#">지역별 공고</a></li>
+              </ul>
+            </div>
           </div>
-
-          <!-- 공고 2 -->
-          <div class="job_card">
-            <a href="/jobkorea/job_posting.html">
-              <img src="/jobkorea/img/co.jpg" alt="공고 배경" class="job_bg" />
-              <img
-                src="/jobkorea/img/coupang_logo.png"
-                alt="쿠팡로고"
-                class="job_logo"
-              />
-              <h4>[신입 우대] 물류센터 사무보조</h4>
-              <hr />
-              <p>신입도 가능! <br />기초부터 배우며 성장할 수 있는 기회</p>
-              <button>채용 바로가기 ></button> <br />
-              <span>연봉 3,000만 이상</span>
-              <span>D-3 ⭐</span>
-            </a>
-          </div>
-        </section>
-      </article>
-
-      <!-- 두 번째 카테고리: IT 직무 채용 -->
-      <article class="job_category">
-        <h3 class="category_title">💻 IT 직무 채용</h3>
-        <p><a href="#">VVIP IT 채용관 ></a></p>
-
-        <section class="job_list">
-          <div class="job_card">
-            <a href="#">
-              <img
-                src="/jobkorea/img/it_bg.jpg"
-                alt="IT 회사 배경"
-                class="job_bg"
-              />
-              <img
-                src="/jobkorea/img/naver_logo.png"
-                alt="네이버 로고"
-                class="job_logo"
-              />
-              <h4>프론트엔드 개발자 신입 모집</h4>
-              <hr />
-              <p>React, TypeScript 가능자 우대</p>
-              <button>채용 바로가기 ></button> <br />
-              <span>연봉 4,200만 이상</span>
-              <span>D-7 ⭐</span>
-            </a>
-          </div>
-        </section>
-      </article>
-    </main>
+        </nav>
+      </div>
+      <div class="login_group">
+        <a href="/jobkorea/login.html" class="login">로그인</a>
+        <a href="/jobkorea/sign_up.html" class="login">회원가입</a>
+        <select id="" class="select">
+          <option selected disabled hidden class="select_option">
+            기업 서비스
+          </option>
+          <option value="">기업회원 로그인</option>
+          <hr />
+          <option value="" class="select_option">기업회원 홈</option>
+          <option value="" class="select_option">공고등록</option>
+          <option value="" class="select_option">공고·지원자 관리</option>
+          <option value="" class="select_option">인재정보</option>
+          <option value="" class="select_option">원픽서비스 안내</option>
+          <option value="" class="select_option">기업회원 서비스 안내</option>
+          <option value="" class="select_option">서치펌 서비스 안내</option>
+          <option value="" class="select_option">기업라운지</option>
+        </select>
+      </div>
+    </div>
   </body>
 </html>
