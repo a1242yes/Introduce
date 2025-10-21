@@ -40,3 +40,10 @@
 .in::placeholder {
   color: rgb(43, 0, 255);
 }
+
+.s::selection {
+  color: #ffffff; /* 글자색 (하얀색) */
+  background-color: #0078ff; /* 배경색 (파란색) */
+  text-decoration: underline wavy yellow; /* 밑줄 장식 */
+  text-shadow: 2px 2px 4px black; /* 텍스트 그림자 */
+}
