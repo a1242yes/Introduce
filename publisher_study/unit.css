@@ -1,15 +1,10 @@
-/* .outer {
-  font-size: 24px;
-} */
-/* html {
-  font-size: 20px;
-} */
-.inner {
-  display: inline-block;
-  width: 100px;
-  height: 50vh;
-  background-color: tomato;
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 200px 50px;
 }
-.inner p {
-  font-size: 2vh;
+.d1 {
+  background-color: aqua;
+}
+.d2 {
+  background-color: bisque;
 }
