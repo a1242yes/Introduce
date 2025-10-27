@@ -1,0 +1,17 @@
+.card_list1 {
+  width: 196px;
+  height: 164px;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+}
+
+.point {
+  width: 46px;
+  height: 20px;
+  font-size: 9px;
+  color: #1828a8;
+  background-color: #f1f5fe;
+  border-radius: 50px;
+  border: 1px solid #1828a8;
+  text-align: center;
+}

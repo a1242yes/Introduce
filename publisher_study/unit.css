@@ -1,0 +1,15 @@
+/* .outer {
+  font-size: 24px;
+} */
+/* html {
+  font-size: 20px;
+} */
+.inner {
+  display: inline-block;
+  width: 100px;
+  height: 50vh;
+  background-color: tomato;
+}
+.inner p {
+  font-size: 2vh;
+}
